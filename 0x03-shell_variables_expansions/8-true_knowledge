@@ -1,2 +1,19 @@
+x-system_engineering-devops/0x03-shell_variables_expansions# chmod u+x 7-create_global_variable
+root@b2cb5d893644:/alx-system_engineering-devops/0x03-shell_variables_expansions# git add .
+root@b2cb5d893644:/alx-system_engineering-devops/0x03-shell_variables_expansions# git commit -m 'Task 8'
+[main f5a01f7] Task 8
+ 1 file changed, 2 insertions(+)
+ create mode 100644 0x03-shell_variables_expansions/8-true_knowledge
+root@b2cb5d893644:/alx-system_engineering-devops/0x03-shell_variables_expansions# git push
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 384 bytes | 384.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Luminoux07/alx-system_engineering-devops.git
+   ebeb392..f5a01f7  main -> main
+root@b2cb5d893644:/alx-system_engineering-devops/0x03-shell_variables_expansions# vi 8-true_knowledge
 #!/bin/bash
-echo $(($TRUEKNOWLEDGE + 128))
+echo $((128 + TRUEKNOWLEDGE))
